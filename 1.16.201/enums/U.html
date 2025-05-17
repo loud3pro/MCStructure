@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>U | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.0484522b.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.4c02fc69.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.ab15d2b7.js" as="script"><link rel="preload" href="/mcstructure/assets/js/1.9734fe39.js" as="script"><link rel="preload" href="/mcstructure/assets/js/98.8e55a83d.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.102fb00e.js"><link rel="prefetch" href="/mcstructure/assets/js/100.9f4887ee.js"><link rel="prefetch" href="/mcstructure/assets/js/101.38d4e8ed.js"><link rel="prefetch" href="/mcstructure/assets/js/102.4cf4c505.js"><link rel="prefetch" href="/mcstructure/assets/js/103.254bae32.js"><link rel="prefetch" href="/mcstructure/assets/js/104.3a611fe2.js"><link rel="prefetch" href="/mcstructure/assets/js/105.a60ad729.js"><link rel="prefetch" href="/mcstructure/assets/js/106.a9dadd40.js"><link rel="prefetch" href="/mcstructure/assets/js/107.1cdafa8f.js"><link rel="prefetch" href="/mcstructure/assets/js/108.289ea0ab.js"><link rel="prefetch" href="/mcstructure/assets/js/109.35965d89.js"><link rel="prefetch" href="/mcstructure/assets/js/11.1efdebfb.js"><link rel="prefetch" href="/mcstructure/assets/js/110.86d45285.js"><link rel="prefetch" href="/mcstructure/assets/js/111.bce93ce8.js"><link rel="prefetch" href="/mcstructure/assets/js/112.b1df2988.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a8d28c8d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.2f28a2d8.js"><link rel="prefetch" href="/mcstructure/assets/js/115.0b9455a1.js"><link rel="prefetch" href="/mcstructure/assets/js/116.54d2cbea.js"><link rel="prefetch" href="/mcstructure/assets/js/117.84dece67.js"><link rel="prefetch" href="/mcstructure/assets/js/118.fd23f544.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0c82af99.js"><link rel="prefetch" href="/mcstructure/assets/js/12.1500ecd9.js"><link rel="prefetch" href="/mcstructure/assets/js/120.df319818.js"><link rel="prefetch" href="/mcstructure/assets/js/121.fe8d085a.js"><link rel="prefetch" href="/mcstructure/assets/js/122.380a2c51.js"><link rel="prefetch" href="/mcstructure/assets/js/123.a24da413.js"><link rel="prefetch" href="/mcstructure/assets/js/124.c2532fc0.js"><link rel="prefetch" href="/mcstructure/assets/js/125.2985dc5d.js"><link rel="prefetch" href="/mcstructure/assets/js/126.6ba94262.js"><link rel="prefetch" href="/mcstructure/assets/js/127.735fef00.js"><link rel="prefetch" href="/mcstructure/assets/js/128.f3e3fa5d.js"><link rel="prefetch" href="/mcstructure/assets/js/129.0d417975.js"><link rel="prefetch" href="/mcstructure/assets/js/13.f04054ca.js"><link rel="prefetch" href="/mcstructure/assets/js/130.0b77cd0e.js"><link rel="prefetch" href="/mcstructure/assets/js/131.2254c64b.js"><link rel="prefetch" href="/mcstructure/assets/js/132.935cc4b6.js"><link rel="prefetch" href="/mcstructure/assets/js/133.0ecb333e.js"><link rel="prefetch" href="/mcstructure/assets/js/134.5715673e.js"><link rel="prefetch" href="/mcstructure/assets/js/135.0027dfea.js"><link rel="prefetch" href="/mcstructure/assets/js/136.42d83b87.js"><link rel="prefetch" href="/mcstructure/assets/js/137.da3ee6d4.js"><link rel="prefetch" href="/mcstructure/assets/js/138.e266fbe7.js"><link rel="prefetch" href="/mcstructure/assets/js/139.c24aa491.js"><link rel="prefetch" href="/mcstructure/assets/js/14.20d1c79c.js"><link rel="prefetch" href="/mcstructure/assets/js/140.88d83e32.js"><link rel="prefetch" href="/mcstructure/assets/js/141.ea97500c.js"><link rel="prefetch" href="/mcstructure/assets/js/142.12103437.js"><link rel="prefetch" href="/mcstructure/assets/js/143.073b2a3f.js"><link rel="prefetch" href="/mcstructure/assets/js/144.5de16957.js"><link rel="prefetch" href="/mcstructure/assets/js/145.6bbe053a.js"><link rel="prefetch" href="/mcstructure/assets/js/146.85aca5e2.js"><link rel="prefetch" href="/mcstructure/assets/js/147.4bca9cc3.js"><link rel="prefetch" href="/mcstructure/assets/js/148.37d63b3a.js"><link rel="prefetch" href="/mcstructure/assets/js/149.222704e4.js"><link rel="prefetch" href="/mcstructure/assets/js/15.9d8ff414.js"><link rel="prefetch" href="/mcstructure/assets/js/150.c5e7d45c.js"><link rel="prefetch" href="/mcstructure/assets/js/151.2ee19433.js"><link rel="prefetch" href="/mcstructure/assets/js/152.933845cb.js"><link rel="prefetch" href="/mcstructure/assets/js/153.f005156d.js"><link rel="prefetch" href="/mcstructure/assets/js/154.6fc09a83.js"><link rel="prefetch" href="/mcstructure/assets/js/155.b6c305d1.js"><link rel="prefetch" href="/mcstructure/assets/js/156.0910151a.js"><link rel="prefetch" href="/mcstructure/assets/js/157.5dab16c5.js"><link rel="prefetch" href="/mcstructure/assets/js/158.de7f170f.js"><link rel="prefetch" href="/mcstructure/assets/js/159.a5c718e7.js"><link rel="prefetch" href="/mcstructure/assets/js/16.9d3aa9da.js"><link rel="prefetch" href="/mcstructure/assets/js/160.38fc5a00.js"><link rel="prefetch" href="/mcstructure/assets/js/161.493ae65d.js"><link rel="prefetch" href="/mcstructure/assets/js/162.2b7257ff.js"><link rel="prefetch" href="/mcstructure/assets/js/163.24187ca7.js"><link rel="prefetch" href="/mcstructure/assets/js/164.560a9bc3.js"><link rel="prefetch" href="/mcstructure/assets/js/17.0889d1c8.js"><link rel="prefetch" href="/mcstructure/assets/js/18.df0372db.js"><link rel="prefetch" href="/mcstructure/assets/js/19.af158d36.js"><link rel="prefetch" href="/mcstructure/assets/js/20.97f59a2a.js"><link rel="prefetch" href="/mcstructure/assets/js/21.5962fd4e.js"><link rel="prefetch" href="/mcstructure/assets/js/22.4d3522c5.js"><link rel="prefetch" href="/mcstructure/assets/js/23.3537cb24.js"><link rel="prefetch" href="/mcstructure/assets/js/24.c75bf0ca.js"><link rel="prefetch" href="/mcstructure/assets/js/25.24e24560.js"><link rel="prefetch" href="/mcstructure/assets/js/26.7766e0fb.js"><link rel="prefetch" href="/mcstructure/assets/js/27.e9f6074c.js"><link rel="prefetch" href="/mcstructure/assets/js/28.fa15c259.js"><link rel="prefetch" href="/mcstructure/assets/js/29.618d33e1.js"><link rel="prefetch" href="/mcstructure/assets/js/3.78f10f89.js"><link rel="prefetch" href="/mcstructure/assets/js/30.6cf1500b.js"><link rel="prefetch" href="/mcstructure/assets/js/31.22856a35.js"><link rel="prefetch" href="/mcstructure/assets/js/32.bffe7ab8.js"><link rel="prefetch" href="/mcstructure/assets/js/33.7806de32.js"><link rel="prefetch" href="/mcstructure/assets/js/34.c50997a1.js"><link rel="prefetch" href="/mcstructure/assets/js/35.50d88856.js"><link rel="prefetch" href="/mcstructure/assets/js/36.0a3b9225.js"><link rel="prefetch" href="/mcstructure/assets/js/37.892173e1.js"><link rel="prefetch" href="/mcstructure/assets/js/38.faa710ad.js"><link rel="prefetch" href="/mcstructure/assets/js/39.08679ec0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.891576c8.js"><link rel="prefetch" href="/mcstructure/assets/js/40.1b76e3aa.js"><link rel="prefetch" href="/mcstructure/assets/js/41.ab86d7dd.js"><link rel="prefetch" href="/mcstructure/assets/js/42.5f6b9020.js"><link rel="prefetch" href="/mcstructure/assets/js/43.74c52cc7.js"><link rel="prefetch" href="/mcstructure/assets/js/44.29f933bd.js"><link rel="prefetch" href="/mcstructure/assets/js/45.89046872.js"><link rel="prefetch" href="/mcstructure/assets/js/46.927693bf.js"><link rel="prefetch" href="/mcstructure/assets/js/47.6c5e2eb5.js"><link rel="prefetch" href="/mcstructure/assets/js/48.fc418a99.js"><link rel="prefetch" href="/mcstructure/assets/js/49.ab1bff3b.js"><link rel="prefetch" href="/mcstructure/assets/js/5.12550f3f.js"><link rel="prefetch" href="/mcstructure/assets/js/50.34a77e29.js"><link rel="prefetch" href="/mcstructure/assets/js/51.cdab9fd0.js"><link rel="prefetch" href="/mcstructure/assets/js/52.eabfd13f.js"><link rel="prefetch" href="/mcstructure/assets/js/53.f32740a7.js"><link rel="prefetch" href="/mcstructure/assets/js/54.fcfdf201.js"><link rel="prefetch" href="/mcstructure/assets/js/55.dd20532e.js"><link rel="prefetch" href="/mcstructure/assets/js/56.a78e3680.js"><link rel="prefetch" href="/mcstructure/assets/js/57.89305262.js"><link rel="prefetch" href="/mcstructure/assets/js/58.35b65b37.js"><link rel="prefetch" href="/mcstructure/assets/js/59.3817674a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.436e88f9.js"><link rel="prefetch" href="/mcstructure/assets/js/60.2398d268.js"><link rel="prefetch" href="/mcstructure/assets/js/61.61cad8b5.js"><link rel="prefetch" href="/mcstructure/assets/js/62.c2d852d2.js"><link rel="prefetch" href="/mcstructure/assets/js/63.168d8107.js"><link rel="prefetch" href="/mcstructure/assets/js/64.db4e10ba.js"><link rel="prefetch" href="/mcstructure/assets/js/65.17e2ed8f.js"><link rel="prefetch" href="/mcstructure/assets/js/66.0ad691e0.js"><link rel="prefetch" href="/mcstructure/assets/js/67.1e9ccecd.js"><link rel="prefetch" href="/mcstructure/assets/js/68.3d418c4b.js"><link rel="prefetch" href="/mcstructure/assets/js/69.bf6a0b1f.js"><link rel="prefetch" href="/mcstructure/assets/js/7.c2acc470.js"><link rel="prefetch" href="/mcstructure/assets/js/70.f9e2f365.js"><link rel="prefetch" href="/mcstructure/assets/js/71.d7256b61.js"><link rel="prefetch" href="/mcstructure/assets/js/72.0282cd39.js"><link rel="prefetch" href="/mcstructure/assets/js/73.b28cf744.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0aab40c1.js"><link rel="prefetch" href="/mcstructure/assets/js/75.11a8476b.js"><link rel="prefetch" href="/mcstructure/assets/js/76.234564da.js"><link rel="prefetch" href="/mcstructure/assets/js/77.89613781.js"><link rel="prefetch" href="/mcstructure/assets/js/78.8cbc90e7.js"><link rel="prefetch" href="/mcstructure/assets/js/79.8dec18f0.js"><link rel="prefetch" href="/mcstructure/assets/js/80.bc89e0ad.js"><link rel="prefetch" href="/mcstructure/assets/js/81.46cda844.js"><link rel="prefetch" href="/mcstructure/assets/js/82.b1dae669.js"><link rel="prefetch" href="/mcstructure/assets/js/83.3a44a1c4.js"><link rel="prefetch" href="/mcstructure/assets/js/84.9604e4ea.js"><link rel="prefetch" href="/mcstructure/assets/js/85.0b6985d2.js"><link rel="prefetch" href="/mcstructure/assets/js/86.0a705d22.js"><link rel="prefetch" href="/mcstructure/assets/js/87.7d036791.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f4f57b27.js"><link rel="prefetch" href="/mcstructure/assets/js/89.d107adcd.js"><link rel="prefetch" href="/mcstructure/assets/js/90.c6964cf1.js"><link rel="prefetch" href="/mcstructure/assets/js/91.461e7454.js"><link rel="prefetch" href="/mcstructure/assets/js/92.ea6588b8.js"><link rel="prefetch" href="/mcstructure/assets/js/93.12f08abd.js"><link rel="prefetch" href="/mcstructure/assets/js/94.ec163f63.js"><link rel="prefetch" href="/mcstructure/assets/js/95.898bdf72.js"><link rel="prefetch" href="/mcstructure/assets/js/96.63aead8b.js"><link rel="prefetch" href="/mcstructure/assets/js/97.e24085ec.js"><link rel="prefetch" href="/mcstructure/assets/js/99.8ccfc759.js"><link rel="prefetch" href="/mcstructure/assets/js/vendors~docsearch.d856fa52.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.0484522b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Struct</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Enums</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.16.201/enums/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.16.201/enums/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.16.201/enums/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.16.201/enums/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.16.201/enums/D~1.html" class="sidebar-link">D~1</a></li><li><a href="/mcstructure/1.16.201/enums/D~2.html" class="sidebar-link">D~2</a></li><li><a href="/mcstructure/1.16.201/enums/D~3.html" class="sidebar-link">D~3</a></li><li><a href="/mcstructure/1.16.201/enums/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.16.201/enums/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.16.201/enums/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.16.201/enums/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.16.201/enums/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.16.201/enums/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.16.201/enums/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.16.201/enums/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.16.201/enums/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.16.201/enums/N.html" class="sidebar-link">N</a></li><li><a href="/mcstructure/1.16.201/enums/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.16.201/enums/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.16.201/enums/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.16.201/enums/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.16.201/enums/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.16.201/enums/U.html" aria-current="page" class="active sidebar-link">U</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.16.201/enums/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.16.201/enums/W.html" class="sidebar-link">W</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="u"><a href="#u" class="header-anchor">#</a> U</h1> <h3 id="ui-childinsertposition"><a href="#ui-childinsertposition" class="header-anchor">#</a> <code>ui::ChildInsertPosition</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Right</td> <td><code>0</code></td></tr> <tr><td>Left</td> <td><code>1</code></td></tr> <tr><td>Bottom</td> <td><code>2</code></td></tr> <tr><td>Top</td> <td><code>3</code></td></tr> <tr><td>Back</td> <td><code>4</code></td></tr> <tr><td>Front</td> <td><code>5</code></td></tr> <tr><td>NumFrustumPlanes</td> <td><code>6</code></td></tr></tbody></table> <h3 id="ui-orientationtype"><a href="#ui-orientationtype" class="header-anchor">#</a> <code>ui::OrientationType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>Vertical</td> <td><code>1</code></td></tr> <tr><td>Horizontal</td> <td><code>2</code></td></tr></tbody></table> <h3 id="updateversionscreencontext"><a href="#updateversionscreencontext" class="header-anchor">#</a> <code>UpdateVersionScreenContext</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody><tr><td>UpdateClientPrompt</td> <td><code>0</code></td></tr> <tr><td>StoreNotSupported</td> <td><code>1</code></td></tr></tbody></table> <h3 id="ui-textalignment"><a href="#ui-textalignment" class="header-anchor">#</a> <code>ui::TextAlignment</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ui-layoutaxisoffsetcontainertype"><a href="#ui-layoutaxisoffsetcontainertype" class="header-anchor">#</a> <code>ui::LayoutAxisOffsetContainerType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ui-cardinaldirection"><a href="#ui-cardinaldirection" class="header-anchor">#</a> <code>ui::CardinalDirection</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ui-layoutaxisoperation"><a href="#ui-layoutaxisoperation" class="header-anchor">#</a> <code>ui::LayoutAxisOperation</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ui-nameresolutionscope"><a href="#ui-nameresolutionscope" class="header-anchor">#</a> <code>ui::NameResolutionScope</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="ui-dirtyflag"><a href="#ui-dirtyflag" class="header-anchor">#</a> <code>ui::DirtyFlag</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="uibatchtype"><a href="#uibatchtype" class="header-anchor">#</a> <code>UIBatchType</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="uioperation"><a href="#uioperation" class="header-anchor">#</a> <code>UIOperation</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="useanimation"><a href="#useanimation" class="header-anchor">#</a> <code>UseAnimation</code></h3> <table><thead><tr><th>Name</th> <th>Value</th></tr></thead> <tbody></tbody></table> <h3 id="util-xxhash-xxh-errorcode"><a href="#util-xxhash-xxh-errorcode" class="header-anchor">#</a> <code>Util::XXHash::XXH_errorcode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Util::XXHash::XXH_errorcode : __int32
+{
+  XXH_OK = 0x0,
+  XXH_ERROR = 0x1,
+};
+
+</code></pre></div><h3 id="util-xxhash-xxh-endianess"><a href="#util-xxhash-xxh-endianess" class="header-anchor">#</a> <code>Util::XXHash::XXH_endianess</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Util::XXHash::XXH_endianess : __int32
+{
+  XXH_bigEndian = 0x0,
+  XXH_littleEndian = 0x1,
+};
+
+</code></pre></div><h3 id="util-xxhash-xxh-alignment"><a href="#util-xxhash-xxh-alignment" class="header-anchor">#</a> <code>Util::XXHash::XXH_alignment</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Util::XXHash::XXH_alignment : __int32
+{
+  XXH_aligned = 0x0,
+  XXH_unaligned = 0x1,
+};
+
+</code></pre></div><h3 id="uirendermode"><a href="#uirendermode" class="header-anchor">#</a> <code>UIRenderMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum UIRenderMode : __int8
+{
+  ToScreen = 0x0,
+  ToTexture = 0x1,
+  VROverlay = 0x2,
+};
+
+</code></pre></div><h3 id="ui-gameeventnotification"><a href="#ui-gameeventnotification" class="header-anchor">#</a> <code>ui::GameEventNotification</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ui::GameEventNotification : __int32
+{
+  Empty = 0x0,
+  PlayerDeath = 0x1,
+  PlayerListChanged = 0x2,
+  PlayerSignedIn = 0x3,
+  PlayerSignedOut = 0x4,
+  PlayerDisconnected = 0x5,
+  NewMessage = 0x6,
+  NewConsoleMessage = 0x7,
+  ResourcePackConfirmation = 0x8,
+  ResourcePackDownloadFinished = 0x9,
+  PlayerExperienceChanged = 0xA,
+  TitleChanged = 0xB,
+  SubtitleChanged = 0xC,
+  ServerSettingsChanged = 0xD,
+  ActionBarMessageChanged = 0xE,
+  StoreUpdated = 0xF,
+  StoreSalesUpdated = 0x10,
+  LanguageChanged = 0x11,
+  ScreenPushed = 0x12,
+  ScreenPopped = 0x13,
+  SavingStart = 0x14,
+  SavingFinished = 0x15,
+  StructureRendered = 0x16,
+  StructureNotRendered = 0x17,
+  VoiceBegin = 0x18,
+  VoiceEnd = 0x19,
+  RnClosed = 0x1A,
+  VoiceRecordFinish = 0x1B,
+  VoiceUploadFinish = 0x1C,
+  VoiceTranslatedFinish = 0x1D,
+  VoiceRequestPermission = 0x1E,
+  AnimationsEnabledChanged = 0x1F,
+  CurrencyPurchaseMinecoinPackFound = 0x20,
+  NewContentLogMessage = 0x21,
+  NewPerfTurtleMessage = 0x22,
+  IdentityGained = 0x23,
+  PersonaSynced = 0x24,
+  StructureDataExportSuccess = 0x25,
+  StructureDataExportFailed = 0x26,
+  StructureDataQuerySuccess = 0x27,
+  StructureDataQueryFailed = 0x28,
+  WebviewDismissed = 0x29,
+  EntitlementsChanged = 0x2A,
+  PlayerRespawnBlocked = 0x2B,
+  PlayerReadyToRespawn = 0x2C,
+  FilteredTextReady = 0x2D,
+};
+
+</code></pre></div><h3 id="ui-scenetype"><a href="#ui-scenetype" class="header-anchor">#</a> <code>ui::SceneType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef ActorEvent ui::SceneType;
+
+</code></pre></div><h3 id="uiprofile"><a href="#uiprofile" class="header-anchor">#</a> <code>UIProfile</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRCameraMovement UIProfile;
+
+</code></pre></div><h3 id="uiscalingrules"><a href="#uiscalingrules" class="header-anchor">#</a> <code>UIScalingRules</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum UIScalingRules : __int32
+{
+  Desktop = 0x0,
+  PocketApple = 0x1,
+  PocketAndroid = 0x2,
+  PocketWindows = 0x3,
+  Console = 0x4,
+  HandheldConsole = 0x5,
+};
+
+</code></pre></div><h3 id="ui-visibilityflag"><a href="#ui-visibilityflag" class="header-anchor">#</a> <code>ui::VisibilityFlag</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ui::VisibilityFlag;
+
+</code></pre></div><h3 id="ui-fontsize"><a href="#ui-fontsize" class="header-anchor">#</a> <code>ui::FontSize</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum ui::FontSize : __int32
+{
+  Small = 0x0,
+  Normal = 0x1,
+  Large = 0x2,
+  ExtraLarge = 0x3,
+};
+
+</code></pre></div><h3 id="upnpstate"><a href="#upnpstate" class="header-anchor">#</a> <code>UpnpState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace UpnpState;
+
+</code></pre></div><h3 id="uimessage"><a href="#uimessage" class="header-anchor">#</a> <code>UIMessage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum UIMessage : __int32
+{
+  SET_SCROLL_VIEW_POS = 0x0,
+  SET_SCROLL_VIEW_PLAY_NEW_PAGE_AMINATION = 0x1,
+  EDIT_APPEND_TEXT = 0x2,
+};
+
+</code></pre></div><h3 id="uidebugcommandfeature"><a href="#uidebugcommandfeature" class="header-anchor">#</a> <code>UIDebugCommandFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum UIDebugCommandFeature : __int8
+{
+};
+
+</code></pre></div><h3 id="ui-viewrequest"><a href="#ui-viewrequest" class="header-anchor">#</a> <code>ui::ViewRequest</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ui::ViewRequest;
+
+</code></pre></div><h3 id="ui-clipdirection"><a href="#ui-clipdirection" class="header-anchor">#</a> <code>ui::ClipDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ui::ClipDirection;
+
+</code></pre></div><h3 id="uploadstate"><a href="#uploadstate" class="header-anchor">#</a> <code>UploadState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TaskRunResult UploadState;
+
+</code></pre></div><h3 id="uideftype"><a href="#uideftype" class="header-anchor">#</a> <code>UIDefType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef PlayerPermissionLevel UIDefType;
+
+</code></pre></div><h3 id="ui-layoutaxistype"><a href="#ui-layoutaxistype" class="header-anchor">#</a> <code>ui::LayoutAxisType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ui::LayoutAxisType;
+
+</code></pre></div><h3 id="ui-anchorpoint"><a href="#ui-anchorpoint" class="header-anchor">#</a> <code>ui::AnchorPoint</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef SplitScreenPosition ui::AnchorPoint;
+
+</code></pre></div><h3 id="ui-animationtype"><a href="#ui-animationtype" class="header-anchor">#</a> <code>ui::AnimationType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace ui::AnimationType;
+
+</code></pre></div><h3 id="ui-draggable"><a href="#ui-draggable" class="header-anchor">#</a> <code>ui::Draggable</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef MinecraftEventing::SplitScreenMode ui::Draggable;
+
+</code></pre></div><h3 id="ui-tiledirection"><a href="#ui-tiledirection" class="header-anchor">#</a> <code>ui::TileDirection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation ui::TileDirection;
+
+</code></pre></div><h3 id="util-numberconversionresult"><a href="#util-numberconversionresult" class="header-anchor">#</a> <code>Util::NumberConversionResult</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef TransformSpace Util::NumberConversionResult;
+
+</code></pre></div><h3 id="urho3d-intersection"><a href="#urho3d-intersection" class="header-anchor">#</a> <code>Urho3D::Intersection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Urho3D::Intersection : __int32
+{
+  OUTSIDE = 0x0,
+  INTERSECTS = 0x1,
+  INSIDE = 0x2,
+};
+
+</code></pre></div><h3 id="urho3d-emitdirtype"><a href="#urho3d-emitdirtype" class="header-anchor">#</a> <code>Urho3D::EmitDirType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Urho3D::EmitDirType : __int32
+{
+  EMIT_INWARDS = 0x0,
+  EMIT_OUTWARDS = 0x1,
+  EMIT_DIRECTION = 0x2,
+};
+
+</code></pre></div><h3 id="urho3d-emittertype"><a href="#urho3d-emittertype" class="header-anchor">#</a> <code>Urho3D::EmitterType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Urho3D::EmitterType : __int32
+{
+  EMITTER_SPHERE = 0x0,
+  EMITTER_HEMISPHERE = 0x1,
+  EMITTER_CYLINDER = 0x2,
+  EMITTER_BOX = 0x3,
+  EMITTER_CONE = 0x4,
+};
+
+</code></pre></div><h3 id="urho3d-facecameramode"><a href="#urho3d-facecameramode" class="header-anchor">#</a> <code>Urho3D::FaceCameraMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Urho3D::FaceCameraMode : __int32
+{
+  FC_NONE = 0x0,
+  FC_ROTATE_XYZ = 0x1,
+  FC_ROTATE_Y = 0x2,
+  FC_LOOKAT_XYZ = 0x3,
+  FC_LOOKAT_Y = 0x4,
+  FC_LOOKAT_MIXED = 0x5,
+  FC_DIRECTION = 0x6,
+  FC_DIRECTION_HORIZONTAL = 0x7,
+  FC_HORIZONTAL = 0x8,
+  FC_AXIS_X = 0x9,
+  FC_AXIS_Y = 0xA,
+  FC_AXIS_Z = 0xB,
+};
+
+</code></pre></div><h3 id="urho3d-autoremovemode"><a href="#urho3d-autoremovemode" class="header-anchor">#</a> <code>Urho3D::AutoRemoveMode</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Urho3D::AutoRemoveMode : __int32
+{
+  REMOVE_DISABLED = 0x0,
+  REMOVE_COMPONENT = 0x1,
+  REMOVE_NODE = 0x2,
+};
+
+</code></pre></div><h3 id="urho3d-culltype"><a href="#urho3d-culltype" class="header-anchor">#</a> <code>Urho3D::CullType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Urho3D::CullType : __int32
+{
+  RNDER = 0x0,
+  TICK = 0x1,
+};
+
+</code></pre></div><h3 id="uicontrolid-t-uicomponent-newidtype"><a href="#uicontrolid-t-uicomponent-newidtype" class="header-anchor">#</a> <code>uicontrolid_t&lt;UIComponent&gt;::NewIDType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef typeid_t&lt;IScreenCapabilities&gt;::NewIDType uicontrolid_t&lt;UIComponent&gt;::NewIDType;
+
+</code></pre></div><h3 id="urho3d-modelrenderlayer"><a href="#urho3d-modelrenderlayer" class="header-anchor">#</a> <code>Urho3D::ModelRenderLayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Urho3D::ModelRenderLayer : __int32
+{
+  Opaque = 0x1,
+  Blend = 0x2,
+  Bloom = 0x4,
+};
+
+</code></pre></div><h3 id="uimaterialtype"><a href="#uimaterialtype" class="header-anchor">#</a> <code>UIMaterialType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation UIMaterialType;
+
+</code></pre></div><h3 id="urho3d-modelrendertype"><a href="#urho3d-modelrendertype" class="header-anchor">#</a> <code>Urho3D::ModelRenderType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef glTF::Texture::Format Urho3D::ModelRenderType;
+
+</code></pre></div><h3 id="ui-animationstatus"><a href="#ui-animationstatus" class="header-anchor">#</a> <code>ui::AnimationStatus</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef cg::ColorSpace ui::AnimationStatus;
+
+</code></pre></div><h3 id="uianim-state"><a href="#uianim-state" class="header-anchor">#</a> <code>UIAnim::State</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum UIAnim::State : __int32
+{
+  Running = 0x0,
+  Waiting = 0x1,
+};
+
+</code></pre></div><h3 id="uianimationcontroller-ticktype"><a href="#uianimationcontroller-ticktype" class="header-anchor">#</a> <code>UIAnimationController::tickType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef VRHUDPosition UIAnimationController::tickType;
+
+</code></pre></div><h3 id="uianimlayout-applyto"><a href="#uianimlayout-applyto" class="header-anchor">#</a> <code>UIAnimLayout::ApplyTo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum UIAnimLayout::ApplyTo : __int32
+{
+  Offset = 0x0,
+  Size = 0x1,
+};
+
+</code></pre></div><h3 id="uploaderror"><a href="#uploaderror" class="header-anchor">#</a> <code>UploadError</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation UploadError;
+
+</code></pre></div><h3 id="uipackerrortype"><a href="#uipackerrortype" class="header-anchor">#</a> <code>UIPackErrorType</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef Rotation UIPackErrorType;
+
+</code></pre></div><h3 id="udpproxymessages"><a href="#udpproxymessages" class="header-anchor">#</a> <code>UDPProxyMessages</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum UDPProxyMessages : __int32
+{
+  ID_UDP_PROXY_FORWARDING_SUCCEEDED = 0x0,
+  ID_UDP_PROXY_FORWARDING_NOTIFICATION = 0x1,
+  ID_UDP_PROXY_NO_SERVERS_ONLINE = 0x2,
+  ID_UDP_PROXY_RECIPIENT_GUID_NOT_CONNECTED_TO_COORDINATOR = 0x3,
+  ID_UDP_PROXY_ALL_SERVERS_BUSY = 0x4,
+  ID_UDP_PROXY_IN_PROGRESS = 0x5,
+  ID_UDP_PROXY_FORWARDING_REQUEST_FROM_CLIENT_TO_COORDINATOR = 0x6,
+  ID_UDP_PROXY_PING_SERVERS_FROM_COORDINATOR_TO_CLIENT = 0x7,
+  ID_UDP_PROXY_PING_SERVERS_REPLY_FROM_CLIENT_TO_COORDINATOR = 0x8,
+  ID_UDP_PROXY_FORWARDING_REQUEST_FROM_COORDINATOR_TO_SERVER = 0x9,
+  ID_UDP_PROXY_FORWARDING_REPLY_FROM_SERVER_TO_COORDINATOR = 0xA,
+  ID_UDP_PROXY_LOGIN_REQUEST_FROM_SERVER_TO_COORDINATOR = 0xB,
+  ID_UDP_PROXY_LOGIN_SUCCESS_FROM_COORDINATOR_TO_SERVER = 0xC,
+  ID_UDP_PROXY_ALREADY_LOGGED_IN_FROM_COORDINATOR_TO_SERVER = 0xD,
+  ID_UDP_PROXY_NO_PASSWORD_SET_FROM_COORDINATOR_TO_SERVER = 0xE,
+  ID_UDP_PROXY_WRONG_PASSWORD_FROM_COORDINATOR_TO_SERVER = 0xF,
+};
+
+</code></pre></div><h3 id="util-url-queryparametersparsingtoken"><a href="#util-url-queryparametersparsingtoken" class="header-anchor">#</a> <code>Util::Url::QueryParametersParsingToken</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Util::Url::QueryParametersParsingToken : __int32
+{
+  Key = 0x0,
+  Value = 0x1,
+};
+
+</code></pre></div><h3 id="util-removeallcolorcodes-l2-removeallcolorcodesstate"><a href="#util-removeallcolorcodes-l2-removeallcolorcodesstate" class="header-anchor">#</a> <code>Util::removeAllColorCodes::__l2::RemoveAllColorCodesState</code></h3> <div class="language- extra-class"><pre class="language-text"><code>enum Util::removeAllColorCodes::__l2::RemoveAllColorCodesState : __int32
+{
+  Output = 0x0,
+  SawCodeByte1 = 0x1,
+  SawCodeByte2 = 0x2,
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.16.201/enums/T.html" class="prev">
+        T
+      </a></span> <span class="next"><a href="/mcstructure/1.16.201/enums/V.html">
+        V
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.4c02fc69.js" defer></script><script src="/mcstructure/assets/js/2.ab15d2b7.js" defer></script><script src="/mcstructure/assets/js/1.9734fe39.js" defer></script><script src="/mcstructure/assets/js/98.8e55a83d.js" defer></script>
+  </body>
+</html>

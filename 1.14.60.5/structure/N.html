@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>N | MC TIL</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="Some structure and enum information for minecraft bedrock edition.">
+    
+    <link rel="preload" href="/mcstructure/assets/css/0.styles.0484522b.css" as="style"><link rel="preload" href="/mcstructure/assets/js/app.4c02fc69.js" as="script"><link rel="preload" href="/mcstructure/assets/js/2.ab15d2b7.js" as="script"><link rel="preload" href="/mcstructure/assets/js/1.9734fe39.js" as="script"><link rel="preload" href="/mcstructure/assets/js/61.61cad8b5.js" as="script"><link rel="prefetch" href="/mcstructure/assets/js/10.102fb00e.js"><link rel="prefetch" href="/mcstructure/assets/js/100.9f4887ee.js"><link rel="prefetch" href="/mcstructure/assets/js/101.38d4e8ed.js"><link rel="prefetch" href="/mcstructure/assets/js/102.4cf4c505.js"><link rel="prefetch" href="/mcstructure/assets/js/103.254bae32.js"><link rel="prefetch" href="/mcstructure/assets/js/104.3a611fe2.js"><link rel="prefetch" href="/mcstructure/assets/js/105.a60ad729.js"><link rel="prefetch" href="/mcstructure/assets/js/106.a9dadd40.js"><link rel="prefetch" href="/mcstructure/assets/js/107.1cdafa8f.js"><link rel="prefetch" href="/mcstructure/assets/js/108.289ea0ab.js"><link rel="prefetch" href="/mcstructure/assets/js/109.35965d89.js"><link rel="prefetch" href="/mcstructure/assets/js/11.1efdebfb.js"><link rel="prefetch" href="/mcstructure/assets/js/110.86d45285.js"><link rel="prefetch" href="/mcstructure/assets/js/111.bce93ce8.js"><link rel="prefetch" href="/mcstructure/assets/js/112.b1df2988.js"><link rel="prefetch" href="/mcstructure/assets/js/113.a8d28c8d.js"><link rel="prefetch" href="/mcstructure/assets/js/114.2f28a2d8.js"><link rel="prefetch" href="/mcstructure/assets/js/115.0b9455a1.js"><link rel="prefetch" href="/mcstructure/assets/js/116.54d2cbea.js"><link rel="prefetch" href="/mcstructure/assets/js/117.84dece67.js"><link rel="prefetch" href="/mcstructure/assets/js/118.fd23f544.js"><link rel="prefetch" href="/mcstructure/assets/js/119.0c82af99.js"><link rel="prefetch" href="/mcstructure/assets/js/12.1500ecd9.js"><link rel="prefetch" href="/mcstructure/assets/js/120.df319818.js"><link rel="prefetch" href="/mcstructure/assets/js/121.fe8d085a.js"><link rel="prefetch" href="/mcstructure/assets/js/122.380a2c51.js"><link rel="prefetch" href="/mcstructure/assets/js/123.a24da413.js"><link rel="prefetch" href="/mcstructure/assets/js/124.c2532fc0.js"><link rel="prefetch" href="/mcstructure/assets/js/125.2985dc5d.js"><link rel="prefetch" href="/mcstructure/assets/js/126.6ba94262.js"><link rel="prefetch" href="/mcstructure/assets/js/127.735fef00.js"><link rel="prefetch" href="/mcstructure/assets/js/128.f3e3fa5d.js"><link rel="prefetch" href="/mcstructure/assets/js/129.0d417975.js"><link rel="prefetch" href="/mcstructure/assets/js/13.f04054ca.js"><link rel="prefetch" href="/mcstructure/assets/js/130.0b77cd0e.js"><link rel="prefetch" href="/mcstructure/assets/js/131.2254c64b.js"><link rel="prefetch" href="/mcstructure/assets/js/132.935cc4b6.js"><link rel="prefetch" href="/mcstructure/assets/js/133.0ecb333e.js"><link rel="prefetch" href="/mcstructure/assets/js/134.5715673e.js"><link rel="prefetch" href="/mcstructure/assets/js/135.0027dfea.js"><link rel="prefetch" href="/mcstructure/assets/js/136.42d83b87.js"><link rel="prefetch" href="/mcstructure/assets/js/137.da3ee6d4.js"><link rel="prefetch" href="/mcstructure/assets/js/138.e266fbe7.js"><link rel="prefetch" href="/mcstructure/assets/js/139.c24aa491.js"><link rel="prefetch" href="/mcstructure/assets/js/14.20d1c79c.js"><link rel="prefetch" href="/mcstructure/assets/js/140.88d83e32.js"><link rel="prefetch" href="/mcstructure/assets/js/141.ea97500c.js"><link rel="prefetch" href="/mcstructure/assets/js/142.12103437.js"><link rel="prefetch" href="/mcstructure/assets/js/143.073b2a3f.js"><link rel="prefetch" href="/mcstructure/assets/js/144.5de16957.js"><link rel="prefetch" href="/mcstructure/assets/js/145.6bbe053a.js"><link rel="prefetch" href="/mcstructure/assets/js/146.85aca5e2.js"><link rel="prefetch" href="/mcstructure/assets/js/147.4bca9cc3.js"><link rel="prefetch" href="/mcstructure/assets/js/148.37d63b3a.js"><link rel="prefetch" href="/mcstructure/assets/js/149.222704e4.js"><link rel="prefetch" href="/mcstructure/assets/js/15.9d8ff414.js"><link rel="prefetch" href="/mcstructure/assets/js/150.c5e7d45c.js"><link rel="prefetch" href="/mcstructure/assets/js/151.2ee19433.js"><link rel="prefetch" href="/mcstructure/assets/js/152.933845cb.js"><link rel="prefetch" href="/mcstructure/assets/js/153.f005156d.js"><link rel="prefetch" href="/mcstructure/assets/js/154.6fc09a83.js"><link rel="prefetch" href="/mcstructure/assets/js/155.b6c305d1.js"><link rel="prefetch" href="/mcstructure/assets/js/156.0910151a.js"><link rel="prefetch" href="/mcstructure/assets/js/157.5dab16c5.js"><link rel="prefetch" href="/mcstructure/assets/js/158.de7f170f.js"><link rel="prefetch" href="/mcstructure/assets/js/159.a5c718e7.js"><link rel="prefetch" href="/mcstructure/assets/js/16.9d3aa9da.js"><link rel="prefetch" href="/mcstructure/assets/js/160.38fc5a00.js"><link rel="prefetch" href="/mcstructure/assets/js/161.493ae65d.js"><link rel="prefetch" href="/mcstructure/assets/js/162.2b7257ff.js"><link rel="prefetch" href="/mcstructure/assets/js/163.24187ca7.js"><link rel="prefetch" href="/mcstructure/assets/js/164.560a9bc3.js"><link rel="prefetch" href="/mcstructure/assets/js/17.0889d1c8.js"><link rel="prefetch" href="/mcstructure/assets/js/18.df0372db.js"><link rel="prefetch" href="/mcstructure/assets/js/19.af158d36.js"><link rel="prefetch" href="/mcstructure/assets/js/20.97f59a2a.js"><link rel="prefetch" href="/mcstructure/assets/js/21.5962fd4e.js"><link rel="prefetch" href="/mcstructure/assets/js/22.4d3522c5.js"><link rel="prefetch" href="/mcstructure/assets/js/23.3537cb24.js"><link rel="prefetch" href="/mcstructure/assets/js/24.c75bf0ca.js"><link rel="prefetch" href="/mcstructure/assets/js/25.24e24560.js"><link rel="prefetch" href="/mcstructure/assets/js/26.7766e0fb.js"><link rel="prefetch" href="/mcstructure/assets/js/27.e9f6074c.js"><link rel="prefetch" href="/mcstructure/assets/js/28.fa15c259.js"><link rel="prefetch" href="/mcstructure/assets/js/29.618d33e1.js"><link rel="prefetch" href="/mcstructure/assets/js/3.78f10f89.js"><link rel="prefetch" href="/mcstructure/assets/js/30.6cf1500b.js"><link rel="prefetch" href="/mcstructure/assets/js/31.22856a35.js"><link rel="prefetch" href="/mcstructure/assets/js/32.bffe7ab8.js"><link rel="prefetch" href="/mcstructure/assets/js/33.7806de32.js"><link rel="prefetch" href="/mcstructure/assets/js/34.c50997a1.js"><link rel="prefetch" href="/mcstructure/assets/js/35.50d88856.js"><link rel="prefetch" href="/mcstructure/assets/js/36.0a3b9225.js"><link rel="prefetch" href="/mcstructure/assets/js/37.892173e1.js"><link rel="prefetch" href="/mcstructure/assets/js/38.faa710ad.js"><link rel="prefetch" href="/mcstructure/assets/js/39.08679ec0.js"><link rel="prefetch" href="/mcstructure/assets/js/4.891576c8.js"><link rel="prefetch" href="/mcstructure/assets/js/40.1b76e3aa.js"><link rel="prefetch" href="/mcstructure/assets/js/41.ab86d7dd.js"><link rel="prefetch" href="/mcstructure/assets/js/42.5f6b9020.js"><link rel="prefetch" href="/mcstructure/assets/js/43.74c52cc7.js"><link rel="prefetch" href="/mcstructure/assets/js/44.29f933bd.js"><link rel="prefetch" href="/mcstructure/assets/js/45.89046872.js"><link rel="prefetch" href="/mcstructure/assets/js/46.927693bf.js"><link rel="prefetch" href="/mcstructure/assets/js/47.6c5e2eb5.js"><link rel="prefetch" href="/mcstructure/assets/js/48.fc418a99.js"><link rel="prefetch" href="/mcstructure/assets/js/49.ab1bff3b.js"><link rel="prefetch" href="/mcstructure/assets/js/5.12550f3f.js"><link rel="prefetch" href="/mcstructure/assets/js/50.34a77e29.js"><link rel="prefetch" href="/mcstructure/assets/js/51.cdab9fd0.js"><link rel="prefetch" href="/mcstructure/assets/js/52.eabfd13f.js"><link rel="prefetch" href="/mcstructure/assets/js/53.f32740a7.js"><link rel="prefetch" href="/mcstructure/assets/js/54.fcfdf201.js"><link rel="prefetch" href="/mcstructure/assets/js/55.dd20532e.js"><link rel="prefetch" href="/mcstructure/assets/js/56.a78e3680.js"><link rel="prefetch" href="/mcstructure/assets/js/57.89305262.js"><link rel="prefetch" href="/mcstructure/assets/js/58.35b65b37.js"><link rel="prefetch" href="/mcstructure/assets/js/59.3817674a.js"><link rel="prefetch" href="/mcstructure/assets/js/6.436e88f9.js"><link rel="prefetch" href="/mcstructure/assets/js/60.2398d268.js"><link rel="prefetch" href="/mcstructure/assets/js/62.c2d852d2.js"><link rel="prefetch" href="/mcstructure/assets/js/63.168d8107.js"><link rel="prefetch" href="/mcstructure/assets/js/64.db4e10ba.js"><link rel="prefetch" href="/mcstructure/assets/js/65.17e2ed8f.js"><link rel="prefetch" href="/mcstructure/assets/js/66.0ad691e0.js"><link rel="prefetch" href="/mcstructure/assets/js/67.1e9ccecd.js"><link rel="prefetch" href="/mcstructure/assets/js/68.3d418c4b.js"><link rel="prefetch" href="/mcstructure/assets/js/69.bf6a0b1f.js"><link rel="prefetch" href="/mcstructure/assets/js/7.c2acc470.js"><link rel="prefetch" href="/mcstructure/assets/js/70.f9e2f365.js"><link rel="prefetch" href="/mcstructure/assets/js/71.d7256b61.js"><link rel="prefetch" href="/mcstructure/assets/js/72.0282cd39.js"><link rel="prefetch" href="/mcstructure/assets/js/73.b28cf744.js"><link rel="prefetch" href="/mcstructure/assets/js/74.0aab40c1.js"><link rel="prefetch" href="/mcstructure/assets/js/75.11a8476b.js"><link rel="prefetch" href="/mcstructure/assets/js/76.234564da.js"><link rel="prefetch" href="/mcstructure/assets/js/77.89613781.js"><link rel="prefetch" href="/mcstructure/assets/js/78.8cbc90e7.js"><link rel="prefetch" href="/mcstructure/assets/js/79.8dec18f0.js"><link rel="prefetch" href="/mcstructure/assets/js/80.bc89e0ad.js"><link rel="prefetch" href="/mcstructure/assets/js/81.46cda844.js"><link rel="prefetch" href="/mcstructure/assets/js/82.b1dae669.js"><link rel="prefetch" href="/mcstructure/assets/js/83.3a44a1c4.js"><link rel="prefetch" href="/mcstructure/assets/js/84.9604e4ea.js"><link rel="prefetch" href="/mcstructure/assets/js/85.0b6985d2.js"><link rel="prefetch" href="/mcstructure/assets/js/86.0a705d22.js"><link rel="prefetch" href="/mcstructure/assets/js/87.7d036791.js"><link rel="prefetch" href="/mcstructure/assets/js/88.f4f57b27.js"><link rel="prefetch" href="/mcstructure/assets/js/89.d107adcd.js"><link rel="prefetch" href="/mcstructure/assets/js/90.c6964cf1.js"><link rel="prefetch" href="/mcstructure/assets/js/91.461e7454.js"><link rel="prefetch" href="/mcstructure/assets/js/92.ea6588b8.js"><link rel="prefetch" href="/mcstructure/assets/js/93.12f08abd.js"><link rel="prefetch" href="/mcstructure/assets/js/94.ec163f63.js"><link rel="prefetch" href="/mcstructure/assets/js/95.898bdf72.js"><link rel="prefetch" href="/mcstructure/assets/js/96.63aead8b.js"><link rel="prefetch" href="/mcstructure/assets/js/97.e24085ec.js"><link rel="prefetch" href="/mcstructure/assets/js/98.8e55a83d.js"><link rel="prefetch" href="/mcstructure/assets/js/99.8ccfc759.js"><link rel="prefetch" href="/mcstructure/assets/js/vendors~docsearch.d856fa52.js">
+    <link rel="stylesheet" href="/mcstructure/assets/css/0.styles.0484522b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mcstructure/" class="home-link router-link-active"><!----> <span class="site-name">MC TIL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mcstructure/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/Redbeanw44602/mcstructure" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Struct</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mcstructure/1.14.60.5/structure/A.html" class="sidebar-link">A</a></li><li><a href="/mcstructure/1.14.60.5/structure/B.html" class="sidebar-link">B</a></li><li><a href="/mcstructure/1.14.60.5/structure/C.html" class="sidebar-link">C</a></li><li><a href="/mcstructure/1.14.60.5/structure/D.html" class="sidebar-link">D</a></li><li><a href="/mcstructure/1.14.60.5/structure/E.html" class="sidebar-link">E</a></li><li><a href="/mcstructure/1.14.60.5/structure/F.html" class="sidebar-link">F</a></li><li><a href="/mcstructure/1.14.60.5/structure/G.html" class="sidebar-link">G</a></li><li><a href="/mcstructure/1.14.60.5/structure/H.html" class="sidebar-link">H</a></li><li><a href="/mcstructure/1.14.60.5/structure/I.html" class="sidebar-link">I</a></li><li><a href="/mcstructure/1.14.60.5/structure/J.html" class="sidebar-link">J</a></li><li><a href="/mcstructure/1.14.60.5/structure/K.html" class="sidebar-link">K</a></li><li><a href="/mcstructure/1.14.60.5/structure/L.html" class="sidebar-link">L</a></li><li><a href="/mcstructure/1.14.60.5/structure/M.html" class="sidebar-link">M</a></li><li><a href="/mcstructure/1.14.60.5/structure/N.html" aria-current="page" class="active sidebar-link">N</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mcstructure/1.14.60.5/structure/O.html" class="sidebar-link">O</a></li><li><a href="/mcstructure/1.14.60.5/structure/P.html" class="sidebar-link">P</a></li><li><a href="/mcstructure/1.14.60.5/structure/Q.html" class="sidebar-link">Q</a></li><li><a href="/mcstructure/1.14.60.5/structure/R.html" class="sidebar-link">R</a></li><li><a href="/mcstructure/1.14.60.5/structure/S.html" class="sidebar-link">S</a></li><li><a href="/mcstructure/1.14.60.5/structure/T.html" class="sidebar-link">T</a></li><li><a href="/mcstructure/1.14.60.5/structure/U.html" class="sidebar-link">U</a></li><li><a href="/mcstructure/1.14.60.5/structure/V.html" class="sidebar-link">V</a></li><li><a href="/mcstructure/1.14.60.5/structure/W.html" class="sidebar-link">W</a></li><li><a href="/mcstructure/1.14.60.5/structure/X.html" class="sidebar-link">X</a></li><li><a href="/mcstructure/1.14.60.5/structure/Z.html" class="sidebar-link">Z</a></li><li><a href="/mcstructure/1.14.60.5/structure/`.html" class="sidebar-link">`</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Enums</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="n"><a href="#n" class="header-anchor">#</a> N</h1> <h3 id="networkaddress"><a href="#networkaddress" class="header-anchor">#</a> <code>NetworkAddress</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(32) <code>std::string</code></td> <td>host</td></tr> <tr><td>32</td> <td>(2) <code>uint16_t</code></td> <td>port</td></tr></tbody></table> <h3 id="networkpeer-networkstatus"><a href="#networkpeer-networkstatus" class="header-anchor">#</a> <code>NetworkPeer::NetworkStatus</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>NetworkPeer::NetworkLoad</code></td> <td>mLoad</td></tr> <tr><td>4</td> <td>(4) <code>int</code></td> <td>mCurrentPing</td></tr> <tr><td>8</td> <td>(4) <code>int</code></td> <td>mAveragePing</td></tr> <tr><td>12</td> <td>(4) <code>int</code></td> <td>mApproximateMaxBps</td></tr> <tr><td>16</td> <td>(4) <code>float</code></td> <td>mCurrentPacketLoss</td></tr> <tr><td>20</td> <td>(4) <code>float</code></td> <td>mAveragePacketLoss</td></tr> <tr><td>24</td> <td>(8) <code>uint64_t</code></td> <td>mTotalBytesReceived</td></tr> <tr><td>32</td> <td>(8) <code>uint64_t</code></td> <td>mTotalBytesSent</td></tr></tbody></table> <h3 id="newtype-unsigned-char"><a href="#newtype-unsigned-char" class="header-anchor">#</a> <code>NewType&lt;unsigned char&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>NewType&lt;unsigned char&gt;::Raw</code></td> <td>value</td></tr></tbody></table> <h3 id="newtype-long"><a href="#newtype-long" class="header-anchor">#</a> <code>NewType&lt;long&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>NewType&lt;long&gt;::Raw</code></td> <td>value</td></tr></tbody></table> <h3 id="npccomponent-textfilter"><a href="#npccomponent-textfilter" class="header-anchor">#</a> <code>NpcComponent::TextFilter</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Function_base</code></td> <td>baseclass_0</td></tr> <tr><td>24</td> <td>(8) <code>std::function&lt;std::string (const std::string &amp;)&gt;::_Invoker_type</code></td> <td>_M_invoker</td></tr></tbody></table> <h3 id="npcrequestpacket"><a href="#npcrequestpacket" class="header-anchor">#</a> <code>NpcRequestPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>ActorRuntimeID</code></td> <td>mId</td></tr> <tr><td>48</td> <td>(1) <code>NpcRequestPacket::RequestType</code></td> <td>mType</td></tr> <tr><td>56</td> <td>(32) <code>std::string</code></td> <td>mActions</td></tr> <tr><td>88</td> <td>(1) <code>uint8_t</code></td> <td>mActionIndex</td></tr></tbody></table> <h3 id="npcactions"><a href="#npcactions" class="header-anchor">#</a> <code>NpcActions</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;std::unique_ptr&lt;NpcAction&gt;&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="npccommandaction-commandvector"><a href="#npccommandaction-commandvector" class="header-anchor">#</a> <code>NpcCommandAction::CommandVector</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::_Vector_base&lt;NpcCommandAction::SavedCommand&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="navigationcomponent"><a href="#navigationcomponent" class="header-anchor">#</a> <code>NavigationComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mAvoidDamageBlocks</td></tr> <tr><td>1</td> <td>(1) <code>bool</code></td> <td>mAvoidPortals</td></tr> <tr><td>2</td> <td>(1) <code>bool</code></td> <td>mAvoidSun</td></tr> <tr><td>3</td> <td>(1) <code>bool</code></td> <td>mAvoidWater</td></tr> <tr><td>4</td> <td>(1) <code>bool</code></td> <td>mCanBreach</td></tr> <tr><td>5</td> <td>(1) <code>bool</code></td> <td>mCanFloat</td></tr> <tr><td>6</td> <td>(1) <code>bool</code></td> <td>mCanJump</td></tr> <tr><td>7</td> <td>(1) <code>bool</code></td> <td>mCanOpenDoors</td></tr> <tr><td>8</td> <td>(1) <code>bool</code></td> <td>mCanPassDoors</td></tr> <tr><td>9</td> <td>(1) <code>bool</code></td> <td>mCanSink</td></tr> <tr><td>10</td> <td>(1) <code>bool</code></td> <td>mIsAmphibious</td></tr> <tr><td>11</td> <td>(1) <code>bool</code></td> <td>mIsFollowingRivers</td></tr> <tr><td>12</td> <td>(1) <code>bool</code></td> <td>mHasEndPathRadius</td></tr> <tr><td>13</td> <td>(1) <code>bool</code></td> <td>mHasDestination</td></tr> <tr><td>16</td> <td>(4) <code>int</code></td> <td>mTick</td></tr> <tr><td>20</td> <td>(4) <code>int</code></td> <td>mTickTimeout</td></tr> <tr><td>24</td> <td>(4) <code>int</code></td> <td>mLastStuckCheck</td></tr> <tr><td>28</td> <td>(4) <code>float</code></td> <td>mEndPathRadiusSqr</td></tr> <tr><td>32</td> <td>(4) <code>float</code></td> <td>mSpeed</td></tr> <tr><td>36</td> <td>(4) <code>float</code></td> <td>mTerminationThreshold</td></tr> <tr><td>40</td> <td>(12) <code>Vec3</code></td> <td>mLastStuckCheckPosition</td></tr> <tr><td>52</td> <td>(12) <code>Vec3</code></td> <td>mTargetOffset</td></tr> <tr><td>64</td> <td>(8) <code>Unique&lt;PathNavigation&gt;</code></td> <td>mNavigation</td></tr> <tr><td>72</td> <td>(8) <code>Unique&lt;Path&gt;</code></td> <td>mPath</td></tr></tbody></table> <h3 id="networkidentifier"><a href="#networkidentifier" class="header-anchor">#</a> <code>NetworkIdentifier</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(16) <code>RakNet::RakNetGUID</code></td> <td>mGuid</td></tr> <tr><td>16</td> <td>(128) <code>sockaddr_storage</code></td> <td>mSock</td></tr> <tr><td>144</td> <td>(4) <code>NetworkIdentifier::Type</code></td> <td>mType</td></tr></tbody></table> <h3 id="networkstatistics-packetstats"><a href="#networkstatistics-packetstats" class="header-anchor">#</a> <code>NetworkStatistics::PacketStats</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>unsigned int</code></td> <td>id</td></tr> <tr><td>4</td> <td>(4) <code>unsigned int</code></td> <td>sentNum</td></tr> <tr><td>8</td> <td>(4) <code>unsigned int</code></td> <td>sentBytes</td></tr> <tr><td>12</td> <td>(4) <code>unsigned int</code></td> <td>receivedNum</td></tr> <tr><td>16</td> <td>(4) <code>unsigned int</code></td> <td>receivedBytes</td></tr></tbody></table> <h3 id="networkstatistics-overviewstats"><a href="#networkstatistics-overviewstats" class="header-anchor">#</a> <code>NetworkStatistics::OverviewStats</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>unsigned int</code></td> <td>sentBytesUnpacked</td></tr> <tr><td>4</td> <td>(4) <code>unsigned int</code></td> <td>sentBytesPacked</td></tr> <tr><td>8</td> <td>(4) <code>unsigned int</code></td> <td>receivedBytesUnpacked</td></tr> <tr><td>12</td> <td>(4) <code>unsigned int</code></td> <td>receivedBytesPacked</td></tr></tbody></table> <h3 id="networksettingoptions"><a href="#networksettingoptions" class="header-anchor">#</a> <code>NetworkSettingOptions</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>uint16_t</code></td> <td>mCompressionThreshold</td></tr></tbody></table> <h3 id="networksettingspacket"><a href="#networksettingspacket" class="header-anchor">#</a> <code>NetworkSettingsPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(2) <code>uint16_t</code></td> <td>mCompressionThreshold</td></tr></tbody></table> <h3 id="networkblockposition"><a href="#networkblockposition" class="header-anchor">#</a> <code>NetworkBlockPosition</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>BlockPos</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="networkstacklatencypacket"><a href="#networkstacklatencypacket" class="header-anchor">#</a> <code>NetworkStackLatencyPacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(40) <code>Packet</code></td> <td>baseclass_0</td></tr> <tr><td>40</td> <td>(8) <code>std::chrono::_V2::steady_clock::time_point</code></td> <td>createTime</td></tr> <tr><td>48</td> <td>(1) <code>bool</code></td> <td>fromServer</td></tr></tbody></table> <h3 id="nameabledescription"><a href="#nameabledescription" class="header-anchor">#</a> <code>NameableDescription</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>ComponentDescription</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(24) <code>std::vector&lt;NameAction&gt;</code></td> <td>mNameActions</td></tr> <tr><td>32</td> <td>(128) <code>DefinitionTrigger</code></td> <td>mDefaultActionTrigger</td></tr> <tr><td>160</td> <td>(1) <code>bool</code></td> <td>mAlwaysShow</td></tr> <tr><td>161</td> <td>(1) <code>bool</code></td> <td>mAllowNameTagRenaming</td></tr></tbody></table> <h3 id="nameablecomponent"><a href="#nameablecomponent" class="header-anchor">#</a> <code>NameableComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>bool</code></td> <td>mAllowNameTagRenaming</td></tr> <tr><td>1</td> <td>(1) <code>bool</code></td> <td>mAlwaysShow</td></tr></tbody></table> <h3 id="npccomponent"><a href="#npccomponent" class="header-anchor">#</a> <code>NpcComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>int</code></td> <td>mCurrentSkin</td></tr> <tr><td>4</td> <td>(36) <code>NpcGUIOffset</code></td> <td>mPortraitOffsets</td></tr> <tr><td>40</td> <td>(36) <code>NpcGUIOffset</code></td> <td>mPickerOffsets</td></tr> <tr><td>80</td> <td>(24) <code>std::vector&lt;SkinData&gt;</code></td> <td>mNPCSkins</td></tr> <tr><td>104</td> <td>(16) <code>Json::Value</code></td> <td>mNPCData</td></tr> <tr><td>120</td> <td>(24) <code>NpcActions</code></td> <td>mActions</td></tr> <tr><td>144</td> <td>(40) <code>std::optional&lt;std::string &gt;</code></td> <td>mInteractText</td></tr> <tr><td>184</td> <td>(32) <code>NpcComponent::TextFilter</code></td> <td>mInteractTextFilter</td></tr></tbody></table> <h3 id="npcguioffset"><a href="#npcguioffset" class="header-anchor">#</a> <code>NpcGUIOffset</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(12) <code>Vec3</code></td> <td>mTranslation</td></tr> <tr><td>12</td> <td>(12) <code>Vec3</code></td> <td>mRotation</td></tr> <tr><td>24</td> <td>(12) <code>Vec3</code></td> <td>mScale</td></tr></tbody></table> <h3 id="newblockid"><a href="#newblockid" class="header-anchor">#</a> <code>NewBlockID</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>NewType&lt;unsigned short&gt;</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="newtype-unsigned-short"><a href="#newtype-unsigned-short" class="header-anchor">#</a> <code>NewType&lt;unsigned short&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(2) <code>NewType&lt;unsigned short&gt;::Raw</code></td> <td>value</td></tr></tbody></table> <h3 id="nibblepair"><a href="#nibblepair" class="header-anchor">#</a> <code>NibblePair</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8</code></td> <td>_bf_0</td></tr></tbody></table> <h3 id="networkcomponent"><a href="#networkcomponent" class="header-anchor">#</a> <code>NetworkComponent</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>EntityNetId</code></td> <td>mEntityNetId</td></tr></tbody></table> <h3 id="noisebasedtemperatureattributes"><a href="#noisebasedtemperatureattributes" class="header-anchor">#</a> <code>NoiseBasedTemperatureAttributes</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>TemperatureCategory</code></td> <td>mTemperatureCategory</td></tr></tbody></table> <h3 id="newtype-int"><a href="#newtype-int" class="header-anchor">#</a> <code>NewType&lt;int&gt;</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(4) <code>NewType&lt;int&gt;::Raw</code></td> <td>value</td></tr></tbody></table> <h3 id="nameaction"><a href="#nameaction" class="header-anchor">#</a> <code>NameAction</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(24) <code>std::vector&lt;std::string&gt;</code></td> <td>mNameFilters</td></tr> <tr><td>24</td> <td>(128) <code>DefinitionTrigger</code></td> <td>mOnNamed</td></tr></tbody></table> <h3 id="networkchunkpublisherupdatepacket"><a href="#networkchunkpublisherupdatepacket" class="header-anchor">#</a> <code>NetworkChunkPublisherUpdatePacket</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(36) <code>Packet:288</code></td> <td>baseclass_0</td></tr> <tr><td>36</td> <td>(12) <code>BlockPos</code></td> <td>mPosition</td></tr> <tr><td>48</td> <td>(4) <code>uint32_t</code></td> <td>mRadius</td></tr></tbody></table> <h3 id="nulllogger"><a href="#nulllogger" class="header-anchor">#</a> <code>NullLogger</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>leveldb::Logger</code></td> <td>baseclass_0</td></tr></tbody></table> <h3 id="neteventcallback"><a href="#neteventcallback" class="header-anchor">#</a> <code>NetEventCallback</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>int (**)(void)</code></td> <td>_vptr$NetEventCallback</td></tr></tbody></table> <h3 id="networkhandler"><a href="#networkhandler" class="header-anchor">#</a> <code>NetworkHandler</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(8) <code>RakNetInstance::ConnectionCallbacks</code></td> <td>baseclass_0</td></tr> <tr><td>8</td> <td>(8) <code>RakPeerHelper::IPSupportInterface</code></td> <td>baseclass_8</td></tr> <tr><td>16</td> <td>(8) <code>LocalConnector::ConnectionCallbacks</code></td> <td>baseclass_10</td></tr> <tr><td>24</td> <td>(8) <code>Unique&lt;RakNetInstance&gt;</code></td> <td>mRakNetInstance</td></tr> <tr><td>32</td> <td>(8) <code>Unique&lt;LocalConnector&gt;</code></td> <td>mLocalConnector</td></tr> <tr><td>40</td> <td>(8) <code>Unique&lt;RakNetServerLocator&gt;</code></td> <td>mRakNetServerLocator</td></tr> <tr><td>48</td> <td>(8) <code>Unique&lt;UPNPInterface&gt;</code></td> <td>mUPnPInterface</td></tr> <tr><td>56</td> <td>(40) <code>Bedrock::Threading::RecursiveMutex</code></td> <td>mConnectionsMutex</td></tr> <tr><td>96</td> <td>(24) <code>std::vector&lt;std::unique_ptr&lt;NetworkHandler::Connection&gt;&gt;</code></td> <td>mConnections</td></tr> <tr><td>120</td> <td>(56) <code>std::unordered_map&lt;NetworkIdentifier,NetworkHandler::Connection *&gt;</code></td> <td>mConnectionMap</td></tr> <tr><td>176</td> <td>(8) <code>size_t</code></td> <td>mCurrentConnection</td></tr> <tr><td>184</td> <td>(16) <code>Bedrock::Threading::IAsyncResult&lt;void&gt;::Handle</code></td> <td>mReceiveTask</td></tr> <tr><td>200</td> <td>(8) <code>std::unique_ptr&lt;TaskGroup&gt;</code></td> <td>mReceiveTaskGroup</td></tr> <tr><td>208</td> <td>(8) <code>PacketObserver *</code></td> <td>mPacketObserver</td></tr> <tr><td>216</td> <td>(8) <code>Scheduler *</code></td> <td>mMainThread</td></tr> <tr><td>224</td> <td>(32) <code>std::string</code></td> <td>mReceiveBuffer</td></tr> <tr><td>256</td> <td>(152) <code>NetworkIdentifier</code></td> <td>mHostingPlayerId</td></tr> <tr><td>408</td> <td>(1) <code>SubClientId</code></td> <td>mHostingPlayerSubId</td></tr> <tr><td>416</td> <td>(32) <code>std::string</code></td> <td>mSendBuffer</td></tr> <tr><td>448</td> <td>(96) <code>BinaryStream</code></td> <td>mSendStream</td></tr> <tr><td>544</td> <td>(8) <code>std::unique_ptr&lt;ResourcePackTransmissionManager&gt;</code></td> <td>mResourcePackTransmissionManager</td></tr> <tr><td>552</td> <td>(32) <code>Unique&lt;NetworkHandler::IncomingPacketQueue&gt;[4]</code></td> <td>mIncomingPackets</td></tr> <tr><td>584</td> <td>(1) <code>bool</code></td> <td>mUseIPv6Only</td></tr> <tr><td>586</td> <td>(2) <code>uint16_t</code></td> <td>mDefaultGamePort</td></tr> <tr><td>588</td> <td>(2) <code>uint16_t</code></td> <td>mDefaultGamePortv6</td></tr> <tr><td>592</td> <td>(8) <code>std::unique_ptr&lt;NetworkPacketEventCoordinator&gt;</code></td> <td>mPacketEventCoordinator</td></tr> <tr><td>600</td> <td>(8) <code>std::unique_ptr&lt;NetworkStatistics&gt;</code></td> <td>mNetworkStatistics</td></tr> <tr><td>608</td> <td>(2) <code>uint16_t</code></td> <td>mCompressionThreshold</td></tr></tbody></table> <h3 id="noteblock-triggerevent-7ef7c94beab75c6cef4adfb99b570420"><a href="#noteblock-triggerevent-7ef7c94beab75c6cef4adfb99b570420" class="header-anchor">#</a> <code>NoteBlock::triggerEvent::$7EF7C94BEAB75C6CEF4ADFB99B570420</code></h3> <table><thead><tr><th>Offset</th> <th>Type</th> <th>Name</th></tr></thead> <tbody><tr><td>0</td> <td>(1) <code>__int8[1]</code></td> <td>gap0</td></tr></tbody></table> <h3 id="networkstatistics"><a href="#networkstatistics" class="header-anchor">#</a> <code>NetworkStatistics</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NetworkStatistics : PacketObserver
+{
+  const TrackerType mType;
+  NetworkHandler *mNetworkHandler;
+  int mTicks;
+  NetworkStatistics::OverviewStats mTotalOverview;
+  std::unordered_map&lt;int,NetworkStatistics::PacketStats&gt; mTotalPacketStats;
+  std::vector&lt;NetworkStatistics::PacketStats&gt; mTotalCSVPacketStats;
+  std::unordered_map&lt;int,NetworkStatistics::PacketStats&gt; mCurrentPacketStats;
+  std::array&lt;std::string,145&gt; mPacketNames;
+  NetworkStatistics::OverviewStats mCurrentOverview;
+  std::vector&lt;NetworkStatistics::OverviewStats&gt; mLastSeconds;
+  double mStartSeconds;
+  Bedrock::Threading::Mutex mRakNetStatsReadingLock;
+  RakNet::RakNetStatistics mRakNetStatsReading;
+  std::function&lt;bool (RakNet::RakNetStatistics &amp;)&gt; mGetRakNetStatsReading;
+  std::unique_ptr&lt;Core::OutputFileStream&gt; mCSVFile;
+  Core::Profile::CounterToken mUserBytesPerSecSentCounterToken;
+  Core::Profile::CounterToken mActualBytesPerSecSentCounterToken;
+  Core::Profile::CounterToken mActualBytesPerSecReceivedCounterToken;
+  Core::Profile::CounterToken mUserBytesTotalSentCounterToken;
+  Core::Profile::CounterToken mActualBytesTotalSentCounterToken;
+  Core::Profile::CounterToken mActualBytesTotalReceivedCounterToken;
+  Core::Profile::CounterToken mPacketLossPercentagePerSecCounterToken;
+  Core::Profile::CounterToken mPacketLossPercentageTotalCounterToken;
+};
+
+</code></pre></div><h3 id="networkpeer"><a href="#networkpeer" class="header-anchor">#</a> <code>NetworkPeer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NetworkPeer
+{
+  int (**_vptr$NetworkPeer)(void);
+  std::shared_ptr&lt;NetworkPeer&gt; mPeer;
+};
+
+</code></pre></div><h3 id="networkhandler-connection"><a href="#networkhandler-connection" class="header-anchor">#</a> <code>NetworkHandler::Connection</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NetworkHandler::Connection
+{
+  NetworkIdentifier mId;
+  NetworkHandler::Connection::Type mType;
+  std::weak_ptr&lt;NetworkPacketRecorder&gt; mNetworkPacketRecorder;
+  std::weak_ptr&lt;EncryptedNetworkPeer&gt; mEncryptedPeer;
+  std::weak_ptr&lt;BatchedNetworkPeer&gt; mBatchedPeer;
+  std::shared_ptr&lt;NetworkPeer&gt; mPeer;
+  std::chrono::time_point&lt;std::chrono::_V2::steady_clock,std::chrono::duration&lt;long,std::ratio&lt;1,1000000000&gt; &gt; &gt; mLastPacketTime;
+  std::chrono::time_point&lt;std::chrono::_V2::steady_clock,std::chrono::duration&lt;long,std::ratio&lt;1,1000000000&gt; &gt; &gt; mClosedTime;
+  bool mShouldCloseConnection;
+  bool mDisconnected;
+  std::bitset&lt;2&gt; mPausedChannels;
+  std::queue&lt;std::string&gt; mResumedPackets;
+  std::array&lt;std::vector&lt;std::string&gt;,2&gt; mPausedPackets;
+};
+
+</code></pre></div><h3 id="navigationsystem"><a href="#navigationsystem" class="header-anchor">#</a> <code>NavigationSystem</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NavigationSystem : ITickingSystem
+{
+};
+
+</code></pre></div><h3 id="netherdimension"><a href="#netherdimension" class="header-anchor">#</a> <code>NetherDimension</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NetherDimension : Dimension
+{
+};
+
+</code></pre></div><h3 id="nethergenerator"><a href="#nethergenerator" class="header-anchor">#</a> <code>NetherGenerator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NetherGenerator : ChunkSource, WorldGenerator
+{
+  PerlinNoisePtr lperlinNoise1;
+  PerlinNoisePtr lperlinNoise2;
+  PerlinNoisePtr perlinNoise1;
+  PerlinNoisePtr perlinNoise2;
+  PerlinNoisePtr perlinNoise3;
+  PerlinNoisePtr scaleNoise;
+  PerlinNoisePtr depthNoise;
+  ThreadLocal&lt;NetherGenerator::ThreadData&gt; generatorHelpersPool;
+  NetherFortressFeature netherFortressFeature;
+  LargeHellCaveFeature hellCaveFeature;
+};
+
+</code></pre></div><h3 id="networkidentifierwithsubid"><a href="#networkidentifierwithsubid" class="header-anchor">#</a> <code>NetworkIdentifierWithSubId</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) NetworkIdentifierWithSubId
+{
+  NetworkIdentifier id;
+  SubClientId subClientId;
+};
+
+</code></pre></div><h3 id="nethergenerator-threaddata"><a href="#nethergenerator-threaddata" class="header-anchor">#</a> <code>NetherGenerator::ThreadData</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NetherGenerator::ThreadData
+{
+  Random random;
+  std::array&lt;long,32768&gt; blockBuffer;
+};
+
+</code></pre></div><h3 id="netherfortressfeature"><a href="#netherfortressfeature" class="header-anchor">#</a> <code>NetherFortressFeature</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NetherFortressFeature : StructureFeature
+{
+  NetherFortressFeature::MobList bridgeEnemies;
+};
+
+</code></pre></div><h3 id="netherfortressfeature-moblist"><a href="#netherfortressfeature-moblist" class="header-anchor">#</a> <code>NetherFortressFeature::MobList</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::vector&lt;MobSpawnerData&gt; NetherFortressFeature::MobList;
+
+</code></pre></div><h3 id="netherfortressstart"><a href="#netherfortressstart" class="header-anchor">#</a> <code>NetherFortressStart</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NetherFortressStart : StructureStart
+{
+};
+
+</code></pre></div><h3 id="nbstartpiece"><a href="#nbstartpiece" class="header-anchor">#</a> <code>NBStartPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBStartPiece : NBBridgeCrossing
+{
+  std::string previousPiece;
+  PieceWeightList availableBridgePieces;
+  PieceWeightList availableCastlePieces;
+  ReferencedPieceList pendingChildren;
+};
+
+</code></pre></div><h3 id="netherfortresspiece"><a href="#netherfortresspiece" class="header-anchor">#</a> <code>NetherFortressPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NetherFortressPiece : StructurePiece
+{
+};
+
+</code></pre></div><h3 id="nbbridgecrossing"><a href="#nbbridgecrossing" class="header-anchor">#</a> <code>NBBridgeCrossing</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBBridgeCrossing : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="nbbridgestraight"><a href="#nbbridgestraight" class="header-anchor">#</a> <code>NBBridgeStraight</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBBridgeStraight : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="nbbridgeendfiller"><a href="#nbbridgeendfiller" class="header-anchor">#</a> <code>NBBridgeEndFiller</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NBBridgeEndFiller : NetherFortressPiece
+{
+  int selfSeed;
+};
+
+</code></pre></div><h3 id="nbroomcrossing"><a href="#nbroomcrossing" class="header-anchor">#</a> <code>NBRoomCrossing</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBRoomCrossing : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="nbstairsroom"><a href="#nbstairsroom" class="header-anchor">#</a> <code>NBStairsRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBStairsRoom : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="nbmonsterthrone"><a href="#nbmonsterthrone" class="header-anchor">#</a> <code>NBMonsterThrone</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NBMonsterThrone : NetherFortressPiece
+{
+  bool hasPlacedMobSpawner;
+};
+
+</code></pre></div><h3 id="nbcastleentrance"><a href="#nbcastleentrance" class="header-anchor">#</a> <code>NBCastleEntrance</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBCastleEntrance : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="nbcastlestalkroom"><a href="#nbcastlestalkroom" class="header-anchor">#</a> <code>NBCastleStalkRoom</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBCastleStalkRoom : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="nbcastlesmallcorridorpiece"><a href="#nbcastlesmallcorridorpiece" class="header-anchor">#</a> <code>NBCastleSmallCorridorPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBCastleSmallCorridorPiece : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="nbcastlesmallcorridorcrossingpiece"><a href="#nbcastlesmallcorridorcrossingpiece" class="header-anchor">#</a> <code>NBCastleSmallCorridorCrossingPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBCastleSmallCorridorCrossingPiece : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="nbcastlesmallcorridorrightturnpiece"><a href="#nbcastlesmallcorridorrightturnpiece" class="header-anchor">#</a> <code>NBCastleSmallCorridorRightTurnPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NBCastleSmallCorridorRightTurnPiece : NetherFortressPiece
+{
+  bool isNeedingChest;
+};
+
+</code></pre></div><h3 id="nbcastlesmallcorridorleftturnpiece"><a href="#nbcastlesmallcorridorleftturnpiece" class="header-anchor">#</a> <code>NBCastleSmallCorridorLeftTurnPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NBCastleSmallCorridorLeftTurnPiece : NetherFortressPiece
+{
+  bool isNeedingChest;
+};
+
+</code></pre></div><h3 id="nbcastlecorridorstairspiece"><a href="#nbcastlecorridorstairspiece" class="header-anchor">#</a> <code>NBCastleCorridorStairsPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBCastleCorridorStairsPiece : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="nbcastlecorridortbalconypiece"><a href="#nbcastlecorridortbalconypiece" class="header-anchor">#</a> <code>NBCastleCorridorTBalconyPiece</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NBCastleCorridorTBalconyPiece : NetherFortressPiece
+{
+};
+
+</code></pre></div><h3 id="newtype-std-string"><a href="#newtype-std-string" class="header-anchor">#</a> <code>NewType&lt;std::string &gt;</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NewType&lt;std::string &gt;
+{
+  NewType&lt;std::string &gt;::Raw value;
+};
+
+</code></pre></div><h3 id="newtype-std-string-raw"><a href="#newtype-std-string-raw" class="header-anchor">#</a> <code>NewType&lt;std::string &gt;::Raw</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::string NewType&lt;std::string &gt;::Raw;
+
+</code></pre></div><h3 id="npcaction"><a href="#npcaction" class="header-anchor">#</a> <code>NpcAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NpcAction
+{
+  int (**_vptr$NpcAction)(void);
+  const NpcActionType mType;
+  NpcActionMode mMode;
+  std::string mButtonName;
+  std::string mEvaluatedButtonName;
+  std::string mText;
+  std::optional&lt;std::string &gt; mEvaluatedText;
+};
+
+</code></pre></div><h3 id="npcurlaction"><a href="#npcurlaction" class="header-anchor">#</a> <code>NpcUrlAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NpcUrlAction : NpcAction
+{
+};
+
+</code></pre></div><h3 id="npccommandaction-savedcommand"><a href="#npccommandaction-savedcommand" class="header-anchor">#</a> <code>NpcCommandAction::SavedCommand</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) NpcCommandAction::SavedCommand
+{
+  std::string mCommandLine;
+  std::unique_ptr&lt;Command&gt; mCommand;
+  int mVersion;
+};
+
+</code></pre></div><h3 id="npccommandaction"><a href="#npccommandaction" class="header-anchor">#</a> <code>NpcCommandAction</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NpcCommandAction : NpcAction
+{
+  NpcCommandAction::CommandVector mCommands;
+};
+
+</code></pre></div><h3 id="npcdescription"><a href="#npcdescription" class="header-anchor">#</a> <code>NpcDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NpcDescription : ComponentDescription
+{
+  Json::Value mNPCData;
+};
+
+</code></pre></div><h3 id="navigationdescription"><a href="#navigationdescription" class="header-anchor">#</a> <code>NavigationDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NavigationDescription : ComponentDescription
+{
+  std::string mNavigationType;
+  bool mIsAmphibious;
+  bool mAvoidSun;
+  bool mCanPassDoors;
+  bool mCanOpenDoors;
+  bool mCanBreakDoors;
+  bool mAvoidWater;
+  bool mAvoidDamageBlocks;
+  bool mCanFloat;
+  bool mCanSink;
+  bool mAvoidPortals;
+  bool mCanFly;
+  bool mCanWalk;
+  bool mCanSwim;
+  bool mCanClimb;
+  bool mCanBreach;
+  bool mCanJump;
+  bool mUsingDoorAnnotations;
+  bool mCanPathFromAir;
+};
+
+</code></pre></div><h3 id="nbtio"><a href="#nbtio" class="header-anchor">#</a> <code>NbtIo</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NbtIo
+{
+  __int8 gap0[1];
+};
+
+</code></pre></div><h3 id="networkhandler-incomingpacketqueue"><a href="#networkhandler-incomingpacketqueue" class="header-anchor">#</a> <code>NetworkHandler::IncomingPacketQueue</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NetworkHandler::IncomingPacketQueue
+{
+  NetEventCallback *mCallbacksObj;
+  Bedrock::Threading::Mutex mMutex;
+};
+
+</code></pre></div><h3 id="networkpacketeventcoordinator"><a href="#networkpacketeventcoordinator" class="header-anchor">#</a> <code>NetworkPacketEventCoordinator</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NetworkPacketEventCoordinator : EventCoordinator&lt;NetworkPacketEventListener&gt;
+{
+};
+
+</code></pre></div><h3 id="networkpacketeventlistener"><a href="#networkpacketeventlistener" class="header-anchor">#</a> <code>NetworkPacketEventListener</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NetworkPacketEventListener
+{
+  int (**_vptr$NetworkPacketEventListener)(void);
+};
+
+</code></pre></div><h3 id="networkdebugmanager-tracker"><a href="#networkdebugmanager-tracker" class="header-anchor">#</a> <code>NetworkDebugManager::Tracker</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __attribute__((aligned(8))) NetworkDebugManager::Tracker
+{
+  Bedrock::Threading::Mutex mCurrentStatLock;
+  TrackerStat mCurrentStat;
+  std::chrono::_V2::steady_clock::time_point mLastUpdate;
+  std::vector&lt;TrackerStat&gt; mStats;
+  uint32_t mLastSampleNum;
+};
+
+</code></pre></div><h3 id="networkdebugmanager"><a href="#networkdebugmanager" class="header-anchor">#</a> <code>NetworkDebugManager</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NetworkDebugManager
+{
+  std::array&lt;NetworkDebugManager::Tracker,4&gt; mTrackers;
+  TrackerType mRenderGraphMode;
+  std::set&lt;NetworkStatistics *&gt; mStatistics;
+};
+
+</code></pre></div><h3 id="nullsoundplayer"><a href="#nullsoundplayer" class="header-anchor">#</a> <code>NullSoundPlayer</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NullSoundPlayer
+{
+  __int8 baseclass_0[8];
+};
+
+</code></pre></div><h3 id="networkchunkpublisher"><a href="#networkchunkpublisher" class="header-anchor">#</a> <code>NetworkChunkPublisher</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct NetworkChunkPublisher
+{
+  int (**_vptr$NetworkChunkPublisher)(void);
+  Level *mLevel;
+  NetworkHandler *mNetworkHandler;
+  NetworkIdentifier mOwner;
+  ClientBlobCache::Server::ActiveTransfersManager *mClientCache;
+  SubClientId mSubClientId;
+  BlockPos mLastChunkUpdatePosition;
+  uint32_t mLastChunkUpdateRadius;
+  uint32_t mHandleForChunkBuildOrderUpdates;
+  int mChunksSentSinceStart;
+  std::unique_ptr&lt;ChunkViewSource&gt; mSource;
+  GridArea&lt;std::shared_ptr&lt;LevelChunk&gt; &gt;::AddCallback mAddCallback;
+  std::string mCacheSerializeBuffer;
+  std::unordered_map&lt;ChunkPos,std::weak_ptr&lt;LevelChunk&gt;&gt; mQueuedChunks;
+};
+
+</code></pre></div><h3 id="navigationclimbdescription"><a href="#navigationclimbdescription" class="header-anchor">#</a> <code>NavigationClimbDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NavigationClimbDescription : NavigationDescription
+{
+};
+
+</code></pre></div><h3 id="navigationfloatdescription"><a href="#navigationfloatdescription" class="header-anchor">#</a> <code>NavigationFloatDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NavigationFloatDescription : NavigationDescription
+{
+};
+
+</code></pre></div><h3 id="navigationflydescription"><a href="#navigationflydescription" class="header-anchor">#</a> <code>NavigationFlyDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NavigationFlyDescription : NavigationDescription
+{
+};
+
+</code></pre></div><h3 id="navigationhoverdescription"><a href="#navigationhoverdescription" class="header-anchor">#</a> <code>NavigationHoverDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NavigationHoverDescription : NavigationDescription
+{
+};
+
+</code></pre></div><h3 id="navigationgenericdescription"><a href="#navigationgenericdescription" class="header-anchor">#</a> <code>NavigationGenericDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NavigationGenericDescription : NavigationDescription
+{
+};
+
+</code></pre></div><h3 id="navigationswimdescription"><a href="#navigationswimdescription" class="header-anchor">#</a> <code>NavigationSwimDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NavigationSwimDescription : NavigationDescription:464
+{
+  bool mUsingWander;
+  bool mAllowRiverFollow;
+  float mSteeringDamping;
+  float mMinDepth;
+  float mMaxDepth;
+  float mTerrainAvoidDist;
+  float mLookAheadDist;
+  float mCenteredThres;
+};
+
+</code></pre></div><h3 id="navigationwalkdescription"><a href="#navigationwalkdescription" class="header-anchor">#</a> <code>NavigationWalkDescription</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(8))) NavigationWalkDescription : NavigationDescription
+{
+};
+
+</code></pre></div><h3 id="navigationdescription-464"><a href="#navigationdescription-464" class="header-anchor">#</a> <code>NavigationDescription:464</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((packed)) __attribute__((aligned(2))) NavigationDescription:464 : ComponentDescription
+{
+  std::string mNavigationType;
+  bool mIsAmphibious;
+  bool mAvoidSun;
+  bool mCanPassDoors;
+  bool mCanOpenDoors;
+  bool mCanBreakDoors;
+  bool mAvoidWater;
+  bool mAvoidDamageBlocks;
+  bool mCanFloat;
+  bool mCanSink;
+  bool mAvoidPortals;
+  bool mCanFly;
+  bool mCanWalk;
+  bool mCanSwim;
+  bool mCanClimb;
+  bool mCanBreach;
+  bool mCanJump;
+  bool mUsingDoorAnnotations;
+  bool mCanPathFromAir;
+};
+
+</code></pre></div><h3 id="nearestattackabletargetgoal"><a href="#nearestattackabletargetgoal" class="header-anchor">#</a> <code>NearestAttackableTargetGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NearestAttackableTargetGoal : TargetGoal
+{
+  ActorUniqueID mTargetID;
+  const MobDescriptor *mTargetDescriptor;
+  int mRandomInterval;
+  bool mIgnoreTargetType;
+  bool mReselectTargets;
+  int mScanInterval;
+  float mTargetSearchHeight;
+};
+
+</code></pre></div><h3 id="nearestprioritizedattackabletargetgoal"><a href="#nearestprioritizedattackabletargetgoal" class="header-anchor">#</a> <code>NearestPrioritizedAttackableTargetGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NearestPrioritizedAttackableTargetGoal : NearestAttackableTargetGoal
+{
+};
+
+</code></pre></div><h3 id="napgoal"><a href="#napgoal" class="header-anchor">#</a> <code>NapGoal</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NapGoal : Goal
+{
+  Mob *mMob;
+  Tick mCooldown;
+  Tick mDetectMobsTimer;
+  bool mInvalidCooldown;
+  const int mNapCooldownMin;
+  const int mNapCooldownMax;
+  const Vec3 mDetectRange;
+  ActorFilterGroup mCanNapFilters;
+  ActorFilterGroup mWakeMobExceptions;
+};
+
+</code></pre></div><h3 id="npc"><a href="#npc" class="header-anchor">#</a> <code>Npc</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj Npc : Mob
+{
+};
+
+</code></pre></div><h3 id="netherreactorblockactor"><a href="#netherreactorblockactor" class="header-anchor">#</a> <code>NetherReactorBlockActor</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj __attribute__((aligned(4))) NetherReactorBlockActor : BlockActor:1608
+{
+  bool mIsInitialized;
+  bool mHasFinished;
+  __int16 mProgress;
+};
+
+</code></pre></div><h3 id="noteblock"><a href="#noteblock" class="header-anchor">#</a> <code>NoteBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NoteBlock : ActorBlock
+{
+};
+
+</code></pre></div><h3 id="netherwartblock"><a href="#netherwartblock" class="header-anchor">#</a> <code>NetherWartBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NetherWartBlock : BushBlock
+{
+};
+
+</code></pre></div><h3 id="newleafblock"><a href="#newleafblock" class="header-anchor">#</a> <code>NewLeafBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NewLeafBlock : LeafBlock
+{
+};
+
+</code></pre></div><h3 id="newlogblock"><a href="#newlogblock" class="header-anchor">#</a> <code>NewLogBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NewLogBlock : LogBlock
+{
+};
+
+</code></pre></div><h3 id="netherreactorblock"><a href="#netherreactorblock" class="header-anchor">#</a> <code>NetherReactorBlock</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NetherReactorBlock : ActorBlock
+{
+};
+
+</code></pre></div><h3 id="networkchunksource"><a href="#networkchunksource" class="header-anchor">#</a> <code>NetworkChunkSource</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NetworkChunkSource : ChunkSource
+{
+  ChunkSourceLookupMap mChunkMap;
+};
+
+</code></pre></div><h3 id="networkchunkpublisher-sendqueuedchunks-sortedchunk"><a href="#networkchunkpublisher-sendqueuedchunks-sortedchunk" class="header-anchor">#</a> <code>NetworkChunkPublisher::sendQueuedChunks::SortedChunk</code></h3> <div class="language- extra-class"><pre class="language-text"><code>typedef std::pair&lt;float,ChunkPos&gt; NetworkChunkPublisher::sendQueuedChunks::SortedChunk;
+
+</code></pre></div><h3 id="nullsecurestorage"><a href="#nullsecurestorage" class="header-anchor">#</a> <code>NullSecureStorage</code></h3> <div class="language- extra-class"><pre class="language-text"><code>struct __cppobj NullSecureStorage : SecureStorage
+{
+};
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mcstructure/1.14.60.5/structure/M.html" class="prev">
+        M
+      </a></span> <span class="next"><a href="/mcstructure/1.14.60.5/structure/O.html">
+        O
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mcstructure/assets/js/app.4c02fc69.js" defer></script><script src="/mcstructure/assets/js/2.ab15d2b7.js" defer></script><script src="/mcstructure/assets/js/1.9734fe39.js" defer></script><script src="/mcstructure/assets/js/61.61cad8b5.js" defer></script>
+  </body>
+</html>
